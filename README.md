@@ -21,3 +21,5 @@ These are used for creating and initializing a new game based on the selected di
 ### Observer Pattern: 
 Used to determine the game state (InProgress, Won, Lost) and notify listeners accordingly. Statistics regarding played games are saved in an XML file.
 The majority of the game logic is written within the IGame interface, as it is common across all difficulty levels. This interface includes methods for updating the timer, game board, flag count, and current game state based on user actions (left-click or right-click on a cell). Random mine placement and determining the number of neighbors for each non-mine cell are handled within the Board class.
+
+### Teammates: Puițel Teodora, Sandor Viviana
