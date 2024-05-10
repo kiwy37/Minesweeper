@@ -1,0 +1,22 @@
+﻿<Application x:Class="Minesweeper.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModel="clr-namespace:Minesweeper.ViewModels"
+             xmlns:view="clr-namespace:Minesweeper.Views"   
+             xmlns:local="clr-namespace:Minesweeper">
+    
+    <Application.Resources>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:GameVM}">
+            <view:GamePage/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:StartingVM}">
+            <view:StartingPage/>
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type TypeName=viewModel:StatisticsVM}">
+            <view:StatisticsPage/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
